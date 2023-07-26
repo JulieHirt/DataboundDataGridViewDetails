@@ -28,44 +28,44 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.label1 = new Wisej.Web.Label();
-			this.label2 = new Wisej.Web.Label();
-			this.pictureBox1 = new Wisej.Web.PictureBox();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.labelCompanyName = new Wisej.Web.Label();
+			this.labelWebsite = new Wisej.Web.Label();
+			this.pictureBoxLogo = new Wisej.Web.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(80, 13);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(39, 18);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "label1";
+			this.labelCompanyName.AutoSize = true;
+			this.labelCompanyName.Location = new System.Drawing.Point(80, 13);
+			this.labelCompanyName.Name = "label1";
+			this.labelCompanyName.Size = new System.Drawing.Size(39, 18);
+			this.labelCompanyName.TabIndex = 0;
+			this.labelCompanyName.Text = "label1";
 			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(80, 36);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(39, 18);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "label2";
+			this.labelWebsite.AutoSize = true;
+			this.labelWebsite.Location = new System.Drawing.Point(80, 36);
+			this.labelWebsite.Name = "label2";
+			this.labelWebsite.Size = new System.Drawing.Size(39, 18);
+			this.labelWebsite.TabIndex = 1;
+			this.labelWebsite.Text = "label2";
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Location = new System.Drawing.Point(15, 3);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(59, 51);
+			this.pictureBoxLogo.Location = new System.Drawing.Point(15, 3);
+			this.pictureBoxLogo.Name = "pictureBox1";
+			this.pictureBoxLogo.Size = new System.Drawing.Size(59, 51);
 			// 
 			// DetailsControl
 			// 
-			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.pictureBoxLogo);
+			this.Controls.Add(this.labelWebsite);
+			this.Controls.Add(this.labelCompanyName);
 			this.Name = "DetailsControl";
 			this.Size = new System.Drawing.Size(246, 64);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -73,8 +73,8 @@
 
 		#endregion
 
-		private Wisej.Web.Label label1;
-		private Wisej.Web.Label label2;
-		private Wisej.Web.PictureBox pictureBox1;
+		public Wisej.Web.Label labelCompanyName;
+		public Wisej.Web.Label labelWebsite;
+		public Wisej.Web.PictureBox pictureBoxLogo;
 	}
 }
