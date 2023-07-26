@@ -30,10 +30,11 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.dataGridView1 = new Wisej.Web.DataGridView();
-			this.personBindingSource = new Wisej.Web.BindingSource(this.components);
 			this.colName = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.colCompany = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.colID = new Wisej.Web.DataGridViewTextBoxColumn();
+			this.personBindingSource = new Wisej.Web.BindingSource(this.components);
+			this.ButtonColumn = new Wisej.Web.DataGridViewButtonColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -44,16 +45,13 @@
 			this.dataGridView1.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
             this.colName,
             this.colCompany,
-            this.colID});
+            this.colID,
+            this.ButtonColumn});
 			this.dataGridView1.DataSource = this.personBindingSource;
 			this.dataGridView1.Location = new System.Drawing.Point(318, 95);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(569, 370);
 			this.dataGridView1.TabIndex = 0;
-			// 
-			// personBindingSource
-			// 
-			this.personBindingSource.DataSource = typeof(DataboundDGV.Person);
 			// 
 			// colName
 			// 
@@ -72,6 +70,15 @@
 			this.colID.DataPropertyName = "ID";
 			this.colID.HeaderText = "ID";
 			this.colID.Name = "colID";
+			// 
+			// personBindingSource
+			// 
+			this.personBindingSource.DataSource = typeof(DataboundDGV.Person);
+			// 
+			// ButtonColumn
+			// 
+			this.ButtonColumn.HeaderText = "ButtonColumn";
+			this.ButtonColumn.Name = "ButtonColumn";
 			// 
 			// Page1
 			// 
@@ -94,6 +101,7 @@
 		private Wisej.Web.DataGridViewTextBoxColumn colCompany;
 		private Wisej.Web.DataGridViewTextBoxColumn colID;
 		private Wisej.Web.BindingSource personBindingSource;
+		private Wisej.Web.DataGridViewButtonColumn ButtonColumn;
 	}
 }
 

@@ -24,7 +24,7 @@ namespace DataboundDGV
 			peopleList.Add(new Person() { Name = "Susan", Company = "Google", ID = 4 });
 
 
-			//for loop adds a button to each DGV row
+			//button column in each DGV row
 
 			//all buttons have the same OnClick event 
 
