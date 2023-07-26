@@ -23,6 +23,15 @@ namespace DataboundDGV
 			this.personBindingSource.DataSource = peopleList;
 			peopleList.Add(new Person() { Name = "Susan", Company = "Google", ID = 4 });
 
+
+			//for loop adds a button to each DGV row
+
+			//all buttons have the same OnClick event 
+
+			//OnClick event says that it adds a details control (Custom Usercontrol with 3 textboxes)
+
+			//details control loads data from the companyList, based on the company that person belongs to
+
 		}
 	}
 }
