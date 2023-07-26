@@ -33,8 +33,8 @@
 			this.colName = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.colCompany = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.colID = new Wisej.Web.DataGridViewTextBoxColumn();
-			this.personBindingSource = new Wisej.Web.BindingSource(this.components);
 			this.ButtonColumn = new Wisej.Web.DataGridViewButtonColumn();
+			this.personBindingSource = new Wisej.Web.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -52,6 +52,7 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(569, 370);
 			this.dataGridView1.TabIndex = 0;
+			this.dataGridView1.CellClick += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
 			// colName
 			// 
@@ -71,14 +72,14 @@
 			this.colID.HeaderText = "ID";
 			this.colID.Name = "colID";
 			// 
-			// personBindingSource
-			// 
-			this.personBindingSource.DataSource = typeof(DataboundDGV.Person);
-			// 
 			// ButtonColumn
 			// 
 			this.ButtonColumn.HeaderText = "ButtonColumn";
 			this.ButtonColumn.Name = "ButtonColumn";
+			// 
+			// personBindingSource
+			// 
+			this.personBindingSource.DataSource = typeof(DataboundDGV.Person);
 			// 
 			// Page1
 			// 
@@ -86,7 +87,7 @@
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "Page1";
-			this.Size = new System.Drawing.Size(1524, 478);
+			this.Size = new System.Drawing.Size(1193, 478);
 			this.Load += new System.EventHandler(this.Page1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();

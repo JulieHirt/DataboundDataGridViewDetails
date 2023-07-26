@@ -33,5 +33,14 @@ namespace DataboundDGV
 			//details control loads data from the companyList, based on the company that person belongs to
 
 		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			if(e.ColumnIndex == 3 && e.RowIndex != 0) 
+			{
+				//a button in the ButtonColumn was clicked.
+				AlertBox.Show("clicked");
+			}
+		}
 	}
 }
