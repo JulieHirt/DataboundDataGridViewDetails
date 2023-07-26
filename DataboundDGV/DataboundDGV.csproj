@@ -27,7 +27,7 @@
     <Reference Include="System.Windows.Forms"><Aliases>swf</Aliases></Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Compile Remove="Startup.cs" />
-    <Content Include="Startup.cs"/>
+    <Content Include="Startup.cs" />
   </ItemGroup>
 
   <ItemGroup>
