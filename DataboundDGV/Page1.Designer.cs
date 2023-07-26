@@ -34,6 +34,7 @@
 			this.colCompany = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.colID = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.ButtonColumn = new Wisej.Web.DataGridViewButtonColumn();
+			this.DetailsControl = new Wisej.Web.DataGridViewColumn();
 			this.personBindingSource = new Wisej.Web.BindingSource(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
@@ -46,11 +47,13 @@
             this.colName,
             this.colCompany,
             this.colID,
-            this.ButtonColumn});
+            this.ButtonColumn,
+            this.DetailsControl});
 			this.dataGridView1.DataSource = this.personBindingSource;
-			this.dataGridView1.Location = new System.Drawing.Point(318, 95);
+			this.dataGridView1.Dock = Wisej.Web.DockStyle.Fill;
+			this.dataGridView1.Location = new System.Drawing.Point(0, 0);
 			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(569, 370);
+			this.dataGridView1.Size = new System.Drawing.Size(1193, 478);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
@@ -76,6 +79,11 @@
 			// 
 			this.ButtonColumn.HeaderText = "ButtonColumn";
 			this.ButtonColumn.Name = "ButtonColumn";
+			// 
+			// DetailsControl
+			// 
+			this.DetailsControl.HeaderText = "DetailsControl";
+			this.DetailsControl.Name = "DetailsControl";
 			// 
 			// personBindingSource
 			// 
@@ -103,6 +111,7 @@
 		private Wisej.Web.DataGridViewTextBoxColumn colID;
 		private Wisej.Web.BindingSource personBindingSource;
 		private Wisej.Web.DataGridViewButtonColumn ButtonColumn;
+		private Wisej.Web.DataGridViewColumn DetailsControl;
 	}
 }
 

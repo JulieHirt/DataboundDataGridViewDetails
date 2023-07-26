@@ -36,10 +36,13 @@ namespace DataboundDGV
 
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
-			if(e.ColumnIndex == 3 && e.RowIndex != 0) 
+			//assumes that the buttons are in column 3, and there is an empty column in column 4
+			if(e.ColumnIndex == 3 && e.RowIndex >= 0) 
 			{
 				//a button in the ButtonColumn was clicked.
 				AlertBox.Show("clicked");
+				DetailsControl d = new DetailsControl();
+				dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex +1].Control = d;
 			}
 		}
 	}
